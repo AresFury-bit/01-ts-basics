@@ -22,8 +22,7 @@ logStatus("loading");
 
 {
     {
-        const status: "loading" | "success" | "error" = "loading";
-function logStatus(status:string): void{
+function logStatus(status:"loading"|"success"|"error"): void{
     if (status === "loading") {
         console.log("Loading...");
     } else if (status === "success") {
@@ -33,7 +32,7 @@ function logStatus(status:string): void{
     }
 }
 
-        logStatus(status);
+        logStatus("loading");
     }
 }
 

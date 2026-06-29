@@ -7,11 +7,11 @@ import axios from "axios";
         body: string;
     }
 
-    async function fetchPost(): Promise<Post[]>{
-        const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
+    async function fetchPosts(): Promise<Post[]>{
+        const response = await axios.get<Post[]>('https://jsonplaceholder.typicode.com/posts');
         return response.data;
     }
-    fetchPost().then((posts) => {
+    fetchPosts().then((posts) => {
         console.log(posts[0].title);
     });
 }

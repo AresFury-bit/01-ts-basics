@@ -16,8 +16,8 @@ getFirstElement([true, false, true]); // true
 Переконайся, що тип елемента, який повертається, точно відповідає типу елементів у масиві.
 Перевір, що TypeScript не дозволяє передати масив змішаних типів без відповідного типу. */
 {
-    function getFirstElement<arr>(value:arr[]): arr{
-        return value[0];
+    function getFirstElement<T>(arr:T[]): T{
+        return arr[0];
     }
     getFirstElement<number>([1, 2, 3]);
     getFirstElement<string>(["a", "b", "c"]);
