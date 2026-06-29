@@ -34,5 +34,5 @@ console.log(`Products: ${JSON.stringify(products)}`);
 
     console.log(`Usernames: ${JSON.stringify(usernames)}`);
     console.log(`Ratings: ${JSON.stringify(ratings)}`);
-    console.log(`Rroducts: ${JSON.stringify(products)}`);
+    console.log(`Products: ${JSON.stringify(products)}`);
 }
